@@ -24,6 +24,7 @@
     z-index:1;
     }
   .header__title{
+       /*заголовок Научиться учиться*/
     position: absolute;
     display: flex;
     align-items: center;
@@ -35,6 +36,7 @@
     z-index:1;
     }
   .header__subtitle{
+     /*современные подходы*/
     position: absolute;
     width: 338px;
     bottom: 30px;
@@ -46,6 +48,7 @@
     z-index:1;
    }
   .header__main-illustration{
+     /*картинка опять двойка*/
     position: absolute;
     margin: 0;
     right: 0px;
@@ -55,6 +58,7 @@
     z-index: 1;
     }
    .header__square-pic {
+     /*синий квадрат*/
     height: 568px;
     width: 568px;
     position:absolute;
@@ -276,10 +280,10 @@
     padding-bottom:40px;
    }
    .footer__column{
-     position:relative;
-     display:flex;
+     position: relative;
+     display: flex;
      justify-content: space-between;
-     width:90%;
+     width: 90%;
      margin-right:auto;
      margin-left:auto;
      }
@@ -293,8 +297,8 @@
       position:absolute;
       margin-bottom: 18px;
       margin-top:18px;
-      bottom:0;
-      left:0;
+      bottom: 0;
+      left: 0;
       line-height: 25px;
       font-size: 18px;
       font-weight: normal;
