@@ -270,7 +270,7 @@
     min-height:350px;
     flex-basis:711px;
     display:flex;
-    background-color:#1f1f1f;;
+    background-color:#1f1f1f;
     color:white;
     padding-top:60px;
     padding-bottom:40px;
@@ -325,9 +325,9 @@
       padding:0;
      }
      .footer__social-icon{
-      margin-top:20px;
+      margin-top: 20px;
       margin-bottom: 16px;
-      padding:0
+      padding: 0;
       }
      .footer__column-link{
       color:white;
