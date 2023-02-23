@@ -49,7 +49,7 @@
 .header__link {
   /*стрелка после подписи про современные подходы*/
   display:inline-block;
-  color:#2f80ed
+  color:#2f80ed;
 }
 .header__main-illustration {
    /*картинка опять двойка*/
