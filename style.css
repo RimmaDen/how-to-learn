@@ -1,4 +1,4 @@
- 
+
  .page{
     min-width: 1100px;
     max-width: 1600px;
@@ -115,6 +115,7 @@
     font-weight: 600;
  }
  .digits{
+    /*блок про цифры и факты*/
   margin-top: 100px;
   margin-bottom: 100px;
  }
@@ -243,7 +244,7 @@
   justify-content:space-between;
   flex-wrap: wrap;
  }
-   .table__cell_theme_dark { 
+   .table__cell_theme_dark {
     width: 200px;
     margin-right: 0;
     margin-top: 80px;
@@ -291,7 +292,7 @@
       padding-right:200px;
      }
     .logo_place_footer{
-      display:flex; 
+      display:flex;
      }
      .footer__author{
       position:absolute;
@@ -313,7 +314,7 @@
       margin-top:0;
       line-height: 30px;
       font-size: 18px;
-      font-weight: 600; 
+      font-weight: 600;
      }
      .footer__colomn-links{
       display: table-row;
@@ -339,4 +340,3 @@
       font-size: 18px;
       font-weight: normal;
       }
-    
