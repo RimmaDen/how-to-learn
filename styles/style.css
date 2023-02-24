@@ -6,10 +6,11 @@
 }
 
 .header {
+  position: relative;
   height: 100vh;
+  display:flex;
   min-height: 600px;
   max-height: 756px;
-  position: relative;
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
@@ -24,11 +25,11 @@
   z-index: 1;
 }
 .header__title {
-    /*заголовок Научиться учиться*/
-  position: absolute;
-  display: flex;
-  align-items: center;
-  left: 64px;
+  /*заголовок Научиться учиться*/
+  display:flex;
+  align-items:center;
+  margin:0;
+  margin-left: 64px;
   width: 730px;
   font-weight: 600;
   line-height: 96px;
@@ -38,7 +39,8 @@
 .header__subtitle {
    /*Подзаголовок про современные подходы*/
   position: absolute;
-  width: 338px;
+  margin:0;
+  width: 388px;
   bottom: 30px;
   left: 64px;
   font-weight: normal;
@@ -48,8 +50,8 @@
 }
 .header__link {
   /*стрелка после подписи про современные подходы*/
-  display:inline-block;
   color:#2f80ed;
+  text-decoration: none;
 }
 .header__main-illustration {
    /*картинка опять двойка*/
@@ -80,7 +82,6 @@
 .two-columns {
   display: flex;
   width: 80%;
-  min-width: 784px;
   justify-content: space-between;
 }
 .two-columns__brief {
@@ -95,6 +96,7 @@
 .two-columns__main-text {
   display: flex;
   flex-direction: column;
+  min-width: 784px;
   margin: 0;
   padding: 0;
   width: 80%;
@@ -102,17 +104,9 @@
   font-size: 24px;
   font-weight: normal;
 }
-.two-columns__paragraph_top {
+.two-columns__paragraph {
   padding-top: 0;
   margin-top: 0;
-  margin-bottom: 30px;
-}
-.two-columns__paragraph_center {
-  margin-bottom: 30px;
-}
-.two-columns__paragraph_bottom {
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 .two-columns__span-accent {
   line-height: 34px;
@@ -126,7 +120,7 @@
 }
 .section-title {
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   line-height: 1.15;
@@ -135,7 +129,7 @@
 }
 .section-subtitle {
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 20px;
   padding: 0;
   line-height: 34px;
@@ -165,6 +159,7 @@
   padding: 0;
 }
 .table__text {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -173,13 +168,12 @@
 
 .feynman {
   position: relative;
-  margin-top: 100px;
-  padding: 0;
-  height: 890px;
+  padding: 100px 0 0;
+  min-height: 890px;
   background-color: #f2f2f2;
   z-index: -2;
 }
-.feynman__feynman_photo {
+.feynman__photo {
   position: absolute;
   left: 0px;
   width: 867px;
@@ -190,8 +184,7 @@
 .feynman__title {
  /*заголовок Метод Фейнмана*/
   width: 648px;
-  margin: auto;
-  margin-top: 100px;
+  margin: 0 auto;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -200,7 +193,7 @@
 .feynman__subtitle {
 /* Метод Фейнмана, Выучить и не забыть*/
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 70px;
   line-height: 51px;
   font-size: 36px;
@@ -214,6 +207,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-decoration: none;
   color:#2f80ed;
 }
 
@@ -228,7 +222,7 @@
  }
 .section-title_theme_dark {
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   line-height: 1.15;
@@ -237,7 +231,7 @@
  }
 .section-subtitle_theme_dark {
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 20px;
   padding: 0;
   line-height: 34px;
@@ -264,14 +258,14 @@
   font-weight: 600;
   margin: 0;
   padding: 0;
- }
- .table__text_theme_dark {
+}
+.table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   padding-top:20px;
- }
- .kaufman__triangle {
+}
+.kaufman__triangle {
   position: absolute;
   z-index: -1;
   right: -210px;
@@ -279,74 +273,74 @@
   width: 877px;
   height: 877px;
   margin: 0;
- }
+}
 
- .footer {
+.footer {
   min-height: 350px;
-  flex-basis: 711px;
+  box-sizing: border-box;
   display: flex;
   background-color:#1f1f1f;
   color:white;
   padding-top: 60px;
   padding-bottom: 40px;
+}
+.footer__column {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
  }
- .footer__column {
-   position: relative;
-   display: flex;
-   justify-content: space-between;
-   width: 90%;
-   margin-right: auto;
-   margin-left: auto;
-   }
-  .footer__column_content_copyright {
-    padding-right: 200px;
-   }
-  .logo_place_footer {
-    display: flex;
-   }
-   .footer__author {
-    position: absolute;
-    margin-bottom: 18px;
-    margin-top: 18px;
-    bottom: 0;
-    left: 0;
-    line-height: 25px;
-    font-size: 18px;
-    font-weight: normal;
-   }
-   .footer__column_content_info {
-    display: block;
-    padding: 0;
-   }
-   .footer__column-heading {
-    display: flex;
-    margin-bottom: 20px;
-    margin-top: 0;
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: 600;
-   }
-   .footer__colomn-links {
-    display: table-row;
-    padding-bottom: 16px;
-    padding-top: 20px;
-   }
-   ul {
-    list-style: none;
-    padding: 0;
-    }
-   .footer__column_content_social {
-    display: inline-block;
-    padding: 0;
-   }
-   .footer__social-icon {
-    margin-top: 20px;
-    margin-bottom: 16px;
-    padding: 0;
-    }
-   .footer__column-link {
-    color:white;
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: normal;
-    }
+.logo_place_footer {
+  display: flex;
+  height: 32px;
+  width: 228px;
+}
+.footer__author {
+  margin-bottom: 18px;
+  margin-top: 18px;
+  bottom: 0;
+  left: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.footer__column_content_info {
+  display: block;
+  padding: 0;
+}
+.footer__column-heading {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer__colomn-links {
+  padding-bottom: 16px;
+  padding-top: 20px;
+}
+.footer__column_content_social {
+  padding: 0;
+}
+.footer__social-icon {
+  margin-top: 20px;
+  margin-bottom: 16px;
+  padding: 0;
+}
+.footer__column-link {
+  color:white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+   border: solid red;
+}
