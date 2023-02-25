@@ -34,7 +34,7 @@
   font-weight: 600;
   line-height: 96px;
   font-size: 102px;
-  z-index:1;
+  z-index: 2;
 }
 .header__subtitle {
    /*Подзаголовок про современные подходы*/
@@ -46,7 +46,7 @@
   font-weight: normal;
   line-height: 25px;
   font-size: 18px;
-  z-index: 1;
+  z-index: 2;
 }
 .header__link {
   /*стрелка после подписи про современные подходы*/
@@ -62,7 +62,7 @@
   height: 608px;
   bottom: 0px;
   z-index: 1;
-}
+ }
  .header__square-pic {
    /*синий квадрат*/
   height: 568px;
@@ -107,13 +107,16 @@
 .two-columns__paragraph {
   padding-top: 0;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
 }
-
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}
 .digits {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -218,7 +221,7 @@
   background-color: #1f1f1f;
   overflow: hidden;
   color:white;
-  z-index: -2;
+  z-index: 0;
  }
 .section-title_theme_dark {
   width: 60%;
@@ -288,38 +291,45 @@
   padding-top: 60px;
   padding-bottom: 40px;
 }
-.footer__column {
+.footer__column_content_copyright {
+   /* блок с копирайтом*/
+  flex-basis: 711px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+ }
+.logo_place_footer {
+  /* блок с копирайтом, логотип Яндекс Практикум*/
+  height: 32px;
+  width: 228px;
+}
+.footer__author {
+  /* блок с автором*/
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  align-self: auto;
+
+}
+.footer__columns {
+  /* общий блок с колонками с копирайтом, о практикуме и соцсети*/
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
-.footer__column_content_copyright {
-  flex-basis: 711px;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
- }
-.logo_place_footer {
+.footer__column {
+  /* блок с колонками о практикуме и соцсети*/
   display: flex;
-  height: 32px;
-  width: 228px;
-}
-.footer__author {
-  margin-bottom: 18px;
-  margin-top: 18px;
-  bottom: 0;
-  left: 0;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-}
-.footer__column_content_info {
-  display: block;
   padding: 0;
+  margin: 0;
 }
-.footer__column-heading {
+ .footer__column-heading {
   display: flex;
   margin-bottom: 20px;
   margin-top: 0;
@@ -327,24 +337,37 @@
   font-size: 18px;
   font-weight: 600;
 }
-.footer__colomn-links {
-  padding-bottom: 16px;
-  padding-top: 20px;
-}
-.footer__column_content_social {
-  padding: 0;
-}
-.footer__social-icon {
-  margin-top: 20px;
-  margin-bottom: 16px;
-  padding: 0;
-}
+.footer__column-links {
+   /* линки */
+   padding-bottom: 16px;
+   padding-top: 20px;
+   list-style-type: none;
+   padding-left: 0;
+  }
 .footer__column-link {
+  /* общий блок линки*/
   color:white;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  list-style: none;
+  list-style-type: none;
   text-decoration: none;
-   border: solid red;
 }
+.footer__column_content_info {
+  /* инфо о практикуме*/
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.footer__social-icon {
+  /* блок иконки соц-сетей*/
+  height: 16px;
+  width: 16px;
+  padding: 0;
+}
+
