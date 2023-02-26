@@ -171,10 +171,12 @@
 
 .feynman {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 100px 0 0;
   min-height: 890px;
   background-color: #f2f2f2;
-  z-index: -2;
+  z-index: 0;
 }
 .feynman__photo {
   position: absolute;
@@ -182,7 +184,7 @@
   width: 867px;
   height: 637px;
   bottom: 0px;
-  z-index: -1;
+  z-index: 1;
 }
 .feynman__title {
  /*заголовок Метод Фейнмана*/
@@ -192,6 +194,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
+  z-index: 2;
 }
 .feynman__subtitle {
 /* Метод Фейнмана, Выучить и не забыть*/
@@ -201,6 +204,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  z-index: 2;
 }
 .feynman__link {
 /* Метод Фейнмана, подробнее и стрелка*/
@@ -320,8 +324,9 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .footer__column {
   /* блок с колонками о практикуме и соцсети*/
@@ -331,8 +336,7 @@
 }
  .footer__column-heading {
   display: flex;
-  margin-bottom: 20px;
-  margin-top: 0;
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -370,4 +374,12 @@
   width: 16px;
   padding: 0;
 }
-
+img[src="images/youtube-icon.svg"] {
+  margin-right: 10px;
+}
+img[src="images/vk_color_white.svg"] {
+  margin-right: 10px;
+}
+img[src="images/tiktok-icon.svg"] {
+  margin-right: 10px;
+}
