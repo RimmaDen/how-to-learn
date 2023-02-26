@@ -368,8 +368,10 @@
   flex-direction: column;
   padding: 0;
 }
-.footer__social-icon {
+.footer__soсial-icon {
   /* блок иконки соц-сетей*/
+  margin: 0;
+  margin-right: 10px;
   height: 16px;
   width: 16px;
   padding: 0;
