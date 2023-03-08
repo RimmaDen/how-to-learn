@@ -1,3 +1,12 @@
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -15,6 +24,7 @@
   padding: 0;
   background-color: #f2f2f2;
   z-index:1;
+  overflow: hidden;
 }
 .logo_place_header {
   position: absolute;
@@ -52,6 +62,12 @@
   /*стрелка после подписи про современные подходы*/
   color:#2f80ed;
   text-decoration: none;
+  transition: opacity 5s ease;
+
+}
+.header__link:hover {
+  /*стрелка при наведении курсора на нее*/
+  opacity: 0.3;
 }
 .header__main-illustration {
    /*картинка опять двойка*/
@@ -71,7 +87,8 @@
   top:64px;
   right:0px;
   background-color: #2f80ed;
-}
+  animation: rotation 20s infinite;
+  }
 
 .description {
   margin-top: 100px;
@@ -117,7 +134,52 @@
 .two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
+.techniques {
+  /*блок техники обучения*/
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 80%;
+  border: solid 1px red;
+}
+.cards {
+    /*блок техники обучения*/
+  border: solid 3px red;
+  justify-content: space-around;
+  display: flex;
+  width: 920px;
+  margin: 0 auto;
+}
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  align-items: center;
+  border: solid 1px rgb(46, 46, 43);
+ }
+.cards__image {
+  width: 160px;
+  height: 160px;
+  padding-top: 60px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 0;
+  border: solid 1px red;
+ }
+.cards__title {
+ text-align: center;
+ padding-top: 43px;
+ padding-bottom: 16px;
+ margin: 0;
+ border: solid 1px red;
+}
+.cards__description{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: solid 1px red;
+}
 .digits {
+  /*блок про цифры по обучению*/
   margin-top: 100px;
   margin-bottom: 100px;
 }
