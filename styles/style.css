@@ -139,12 +139,10 @@
   margin: 0 auto;
   padding-top: 100px;
   width: 80%;
-  border: solid 1px red;
 }
 .cards {
     /*блок техники обучения*/
-  border: solid 3px red;
-  justify-content: space-around;
+  justify-content: center;
   display: flex;
   width: 920px;
   margin: 0 auto;
@@ -154,30 +152,61 @@
   flex-direction: column;
   width: 240px;
   align-items: center;
-  border: solid 1px rgb(46, 46, 43);
+}
+ .cards__item:first-child {
+  margin-right: 100px;
+ }
+ .cards__item:last-child {
+  margin-left: 100px;
  }
 .cards__image {
   width: 160px;
   height: 160px;
-  padding-top: 60px;
-  padding-right: 40px;
-  padding-left: 40px;
-  margin: 0;
-  border: solid 1px red;
- }
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 43px;
+  border-radius: 160px;
+  padding: 0;
+}
 .cards__title {
  text-align: center;
- padding-top: 43px;
  padding-bottom: 16px;
  margin: 0;
- border: solid 1px red;
+ line-height: 1.15;
+ font-size: 24px;
+ font-weight: 600;
 }
 .cards__description{
   text-align: center;
   margin: 0;
   padding: 0;
-  border: solid 1px red;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
 }
+.video {
+  margin-top: 100px;
+}
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  border: solid red;
+}
+.video__iframe {
+ height: 316px;
+ width: 515px;
+}
+.video__iframe:first-child {
+  margin-right: 20px;
+ }
+ .oakley {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+ }
 .digits {
   /*блок про цифры по обучению*/
   margin-top: 100px;
@@ -278,8 +307,11 @@
   font-weight: normal;
   text-decoration: none;
   color:#2f80ed;
+  transition: opacity 5s ease;
 }
-
+.feynman__link:hover {
+  opacity: 0.3;
+}
 .kaufman {
   position: relative;
   padding-top: 90px;
@@ -333,6 +365,10 @@
   font-size: 18px;
   font-weight: normal;
   padding-top:20px;
+}
+.khan__buy-link {
+  text-decoration: none;
+  color:#2f80ed;
 }
 .kaufman__triangle {
   position: absolute;
