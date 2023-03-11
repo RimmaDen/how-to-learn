@@ -192,7 +192,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  border: solid red;
+  margin-bottom: -60px;
 }
 .video__iframe {
  height: 316px;
@@ -202,64 +202,11 @@
   margin-right: 20px;
  }
  .oakley {
-  margin-top: 100px;
+  margin-top: 160px;
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
- }
-.digits {
-  /*блок про цифры по обучению*/
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
-.section-title {
-  width: 60%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-}
-.section-subtitle {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 20px;
-  padding: 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-}
-.table {
-  display: flex;
-  margin: 0 auto;
-  width: 1100px;
-  padding-bottom: 0;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.table__cell {
-  width: 250px;
-  margin-top: 60px;
-  margin-bottom: 0;
-  padding-top: 0;
-}
-.table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-}
-.table__text {
-  margin: 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  padding-top: 20px;
-}
-
 .feynman {
   position: relative;
   display: flex;
@@ -312,7 +259,128 @@
 .feynman__link:hover {
   opacity: 0.3;
 }
+
+.digits {
+  /*блок про цифры по обучению*/
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.section-title {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+.section-subtitle {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+.table {
+  display: flex;
+  margin: 0 auto;
+  width: 1100px;
+  padding-bottom: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.table__text {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 20px;
+}
+.khan__container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.khan__author {
+  margin: 0;
+  padding: 0;
+  line-height: 42px;
+  font-weight: normal;
+  font-size: 30px;
+}
+.khan__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  line-height: 1.15;
+  font-weight: 600;
+  font-size: 60px;
+}
+.khan__quote {
+  margin: 0;
+  width: 790px;
+  line-height: 34px;
+  font-weight: normal;
+  font-size: 24px;
+}
+.khan__quote-author {
+  margin-top: 36px;
+  margin-bottom: 10px;
+  padding: 0;
+  line-height: 1.15;
+  font-weight: 600;
+  font-size: 24px;
+}
+.khan__quote-author-subline {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 68px;
+  line-height: 1.15;
+  font-weight: normal;
+  font-size: 24px;
+}
+.khan__book-container {
+  display: flex;
+  flex-direction: row;
+}
+.khan__book-pic {
+  object-fit: cover;
+  width: 620px;
+  height: 608px;
+  margin-right: 48px;
+}
+.khan__buy-link {
+  /*линк купить книгу в блоке весь мир-школа */
+  text-decoration: none;
+  color:#2f80ed;
+  line-height: 42px;
+  font-weight: normal;
+  font-size: 30px;
+  transition: opacity 5s ease;
+}
+.khan__buy-link:hover {
+  opacity: 0.3;
+}
 .kaufman {
+   /*блок Кауфман */
   position: relative;
   padding-top: 90px;
   padding-bottom: 90px;
@@ -366,10 +434,7 @@
   font-weight: normal;
   padding-top:20px;
 }
-.khan__buy-link {
-  text-decoration: none;
-  color:#2f80ed;
-}
+
 .kaufman__triangle {
   position: absolute;
   top: 0;
@@ -382,6 +447,7 @@
   z-index: -1;
   padding: 0;
   margin: 0;
+  animation: rotation infinite;
 }
 
 .footer {
