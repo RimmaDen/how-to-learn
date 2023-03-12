@@ -1,0 +1,10 @@
+.feynman__subtitle {
+  /* Метод Фейнмана, Выучить и не забыть*/
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    z-index: 2;
+  }

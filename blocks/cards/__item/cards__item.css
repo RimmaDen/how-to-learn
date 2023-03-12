@@ -1,0 +1,12 @@
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  align-items: center;
+}
+ .cards__item:first-child {
+  margin-right: 100px;
+ }
+ .cards__item:last-child {
+  margin-left: 100px;
+ }

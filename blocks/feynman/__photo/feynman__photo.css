@@ -1,0 +1,8 @@
+.feynman__photo {
+  position: absolute;
+  left: 0px;
+  width: 867px;
+  height: 637px;
+  bottom: 0px;
+  z-index: 1;
+}

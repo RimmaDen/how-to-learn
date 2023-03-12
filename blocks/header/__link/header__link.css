@@ -1,0 +1,10 @@
+.header__link {
+  /*стрелка после подписи про современные подходы*/
+  color:#2f80ed;
+  text-decoration: none;
+  transition: opacity 5s ease;
+}
+.header__link:hover {
+  /*стрелка при наведении курсора на нее*/
+  opacity: 0.3;
+}

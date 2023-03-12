@@ -1,0 +1,7 @@
+.cards {
+  /*блок техники обучения*/
+justify-content: center;
+display: flex;
+width: 920px;
+margin: 0 auto;
+}

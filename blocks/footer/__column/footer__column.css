@@ -1,0 +1,6 @@
+.footer__column {
+  /* блок с колонками о практикуме и соцсети*/
+  display: flex;
+  padding: 0;
+  margin: 0;
+}

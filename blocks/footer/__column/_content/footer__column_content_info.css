@@ -1,0 +1,6 @@
+.footer__column_content_info {
+  /* инфо о практикуме*/
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}

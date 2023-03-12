@@ -1,0 +1,10 @@
+.header__square-pic {
+  /*синий квадрат*/
+ height: 568px;
+ width: 568px;
+ position:absolute;
+ top:64px;
+ right:0px;
+ background-color: #2f80ed;
+ animation: rotation 20s infinite;
+ }
